@@ -74,7 +74,6 @@ section {
 }
 .button-28 {
   padding: 50px;
- 
   width: 200px  ; 
   appearance: none;
   background-color: transparent;
@@ -83,7 +82,6 @@ section {
   box-sizing: border-box;
   color: #3B3B3B;
   cursor: pointer;
-  
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.5em;
   font-weight: 600;
@@ -100,7 +98,6 @@ section {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  
   will-change: transform;
 }
 
