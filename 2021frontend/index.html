@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+            
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="#">Remember<span>That</span></a>
+            <a class="logo" href="#">Graphi-<span>X</span></a>
 
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
@@ -29,22 +30,34 @@
             </nav>
         </div>
     </div>
+    
 
     <section class="hero">
+        
+      
+            
         <div class="container">
+         
+              
             <div class="left-col">
-                <p class="subhead">It's Nitty &amp; Gritty</p>
-                <h1>A Task App That Doesn't Stink</h1>
+                
+                  
+                <p class="subhead">It's Abhishek verma</p>
+                <h1>Experiment from my desk to your screen</h1>
 
-                <div class="hero-cta">
-                    <a href="#" class="primary-cta">Try for free</a>
+                <div class="hero-cta" >
+                      
+                    <button class="button-28" role="button" onclick="sound()"><div class= "svg" id="svg"></div>Button 28</button>
                     <a href="#" class="watch-video-cta">
                         <img src="images/watch.svg" alt="Watch a video">Watch a video
                     </a>
                 </div>
             </div>
-
-            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+            <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+            <!-- <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_z2vighsa.json" class="hero-img"  alt="Illustration" background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay> mdsgfsdghkfhskf</lottie-player> -->
+            <!-- <img src="images/illustration.svg" class="hero-img" alt="Illustration"> -->
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"    style="width: 75%; height: 50%;margin-top: 40px; margin-inline: auto;"  loop  autoplay></lottie-player>
         </div>
     </section>
 
@@ -109,8 +122,13 @@
 
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+    function sound(){
+        var snd = new Audio('music/mixkit-medium-size-angry-dog-bark-54.wav')//wav is also supported
+        snd.play()//plays the sound
+   }
 
         const mobileBtn = document.getElementById('mobile-cta')
               nav = document.querySelector('nav')
@@ -124,7 +142,28 @@
             nav.classList.remove('menu-btn');
         })
 
+        
+        const play = document.querySelector('button');
 
+        const svgContainer = document.getElementById('svg');
+        const animItem = bodymovin.loadAnimation({
+            wrapper: svgContainer,
+            animType: 'svg',
+            loop: false,
+            autoplay: false,
+            path: 'https://assets2.lottiefiles.com/packages/lf20_u4yrau.json'
+            // path: 'https://assets2.lottiefiles.com/packages/lf20_UkrzGeRgj9.json'
+        });
+
+        play.addEventListener('click', () => {
+            svgContainer.classList.remove('hide');
+            animItem.goToAndPlay(0,true);
+        })
+
+        // animItem.addEventListener('complete', () => {
+        //     svgContainer.classList.add('hide');
+            
+        // })
 
     </script>
 

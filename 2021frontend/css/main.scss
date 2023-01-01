@@ -81,6 +81,9 @@ section {
         border-radius: 5em;
         font-weight: bold;
         display: inline-block;
+        cursor: pointer;
+        &:hover { background: #424242;}
+        &:active { background: orange;}
     }
 
     .watch-video-cta {
