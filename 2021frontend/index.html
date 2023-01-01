@@ -47,7 +47,7 @@
 
                 <div class="hero-cta" >
                       
-                    <button class="button-28" role="button"onclick="sound()"><div class= "svg" id="svg"></div>Button 28</button>
+                    <button class="button-28" role="button"onclick="sound()"><div class= "svg hide" id="svg"></div>Button 28</button>
                     <a href="#" class="watch-video-cta">
                         <img src="images/watch.svg" alt="Watch a video">Watch a video
                     </a>
@@ -162,10 +162,10 @@ function sound(){
             animItem.goToAndPlay(0,true);
         })
 
-        // animItem.addEventListener('complete', () => {
-        //     svgContainer.classList.add('hide');
+        animItem.addEventListener('complete', () => {
+            svgContainer.classList.add('hide');
             
-        // })
+        })
 
     </script>
 

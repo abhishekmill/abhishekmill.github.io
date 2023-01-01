@@ -111,14 +111,16 @@ section {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
-
+.hide{
+  display: none;
+}
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
 }
 .svg{ 
   position: absolute;
-  
+  pointer-events: none;
   margin-right: auto;
   margin-left: auto;
   transform: translate3d(0px, 0px, 0px);
