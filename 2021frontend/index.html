@@ -33,6 +33,9 @@
     
 
     <section class="hero">
+
+
+      
         
       
             
@@ -53,12 +56,46 @@
                     </a>
                 </div>
             </div>
+
+            
+            <div style="position: absolute;">  
+                
+                 <img  id="co" src="images/Stewie.png" class="cat" style="    width: 393px;
+                 right: -1222px;
+                 height: 698px;
+                 top: -204px;
+                 position: absolute;">
+
+
+
+                     <img src="images/eye.PNG" alt="eyes1" class="eyes" style="    right: -978px;
+                     position: absolute;
+                     mix-blend-mode: darken;
+                     top: 94px;
+                     mix-blend-mode: darken;
+                     outline-color: white;
+                     width: 30px;;">
+                        
+                    
+                    <img src="images/eye.PNG" alt="eyes2" class="eyes" id="eyeball" style=" right: -1089px;
+                    position: absolute;
+                    mix-blend-mode: darken;
+                    top: 76px;
+                    width: 30px;">
+                
+                </div>
+            
+
+
+
+            
             <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
             <!-- <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_z2vighsa.json" class="hero-img"  alt="Illustration" background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay> mdsgfsdghkfhskf</lottie-player> -->
             <!-- <img src="images/illustration.svg" class="hero-img" alt="Illustration"> -->
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"    style="width: 75%; height: 50%;margin-top: 40px; margin-inline: auto;"  loop  autoplay></lottie-player>
+            <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"    style="width: 75%; height: 50%;margin-top: 40px; margin-inline: auto;"  loop  autoplay></lottie-player> -->
         </div>
+        
     </section>
 
         <section class="features-section">
@@ -86,20 +123,22 @@
             <div class="cards">
               <div class="card card-1">
                 <div class="card__icon"><i class="fas fa-bolt"></i></div>
-                <div class="img-card" > <img   src="images/PXL_20220625_153947338.MP.jpg" alt="kuch ni hai">  
+                <div class="img-card" ><img   src="images/PXL_20220625_153947338.MP.jpg" alt="kuch ni hai">   
                 </div>
                 <p class="card__exit"><i class="fas fa-times"></i>  </p>
-                <h2 class="card__title">HABIBI LETS ROCK IT</h2>
+                <h2 class="card__title">What is green house effect?</h2>
                 <p class="card__apply">
-                  <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                  <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
                 </p>
               </div>
               <div class="card card-2">
                 <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <div class="img-card" ><img   src="images/Picsart_23-01-29_23-51-30-230.jpg" alt="kuch ni hai">   
+                </div>
                 <p class="card__exit"><i class="fas fa-times"></i></p>
-                <h2 class="card__title">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                <h2 class="card__title">Why do we program not using AI.</h2>
                 <p class="card__apply">
-                  <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                  <a class="card__link" href="#">Know more<i class="fas fa-arrow-right"></i></a>
                 </p>
               </div>
               <div class="card card-3">
@@ -138,7 +177,7 @@
           </div>
     </section>
 
-    <!-- <section class="testimonials-section">
+    <section class="testimonials-section">
         <div class="container">
             <ul>
                 <li>
@@ -161,7 +200,8 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
+    
 
     <section class="contact-section">
         <div class="container">
@@ -231,6 +271,29 @@ function sound(){
             svgContainer.classList.add('hide');
             
         })
+
+    </script>
+  
+
+
+         
+        
+
+
+<script type="text/javascript">
+    document.querySelector("body").addEventListener("mousemove", eyeball);
+
+    function eyeball() {
+      const eye = document.querySelectorAll(".eyes");
+      eye.forEach(function (eye) {
+        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rotate = radian * (180 / Math.PI) * +1 + 280;
+        eye.style.transform = "rotate(" + rotate + "deg)";
+      })
+    }
 
     </script>
 

@@ -6,20 +6,20 @@
 }
 
 body {
-  background: #F2F2F2;
+  background: rgb(33, 25, 25);
   margin: 0;
   font-family: 'Poppins';
 }
 
 .navbar {
-  background: white;
+  background: rgb(0, 0, 0);
   padding: 1em;
 }
 
 .navbar .logo {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: rgb(255, 248, 248);
   font-size: 1.2em;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 a {
-  color: #444444;
+  color: #e7c3c3;
 }
 
 ul {
@@ -65,7 +65,10 @@ section {
   font-weight: bold;
   color: gray;
   letter-spacing: .3em;
+  color: #684e4e;
+  
 }
+
 
 .left-col h1 {
   font-size: 2.5em;
@@ -378,6 +381,8 @@ nav li a:hover {
   .hero .container .left-col h1 {
     font-size: 3em;
     width: 90%;
+    color: #ffffff;
+    
   }
   .hero-img {
     width: 30%;
@@ -468,13 +473,14 @@ nav li a:hover {
 .img-card img{
   flex-wrap: wrap;
   border-radius: 10px;
-  width: 100%;
+  width: 500px;
+  height: 300px;
   position:relative; 
   object-fit: cover;
 }
 .img-card img:hover{
- transform: scale(1.01);
- transition-duration: 1000ms;
+ transform: scale(1.005);
+ transition-duration: 500ms;
 
 
 
@@ -550,11 +556,11 @@ nav li a:hover {
 /* CARD BACKGROUNDS */
 
 .card-1 {
-  background: radial-gradient(#1fe4f5, #3fbafe);
+  background: radial-gradient(#100326, #130244);
 }
 
 .card-2 {
-  background: radial-gradient(#fbc1cc, #fa99b2);
+  background: radial-gradient(#23191b, #140307);
 }
 
 .card-3 {
@@ -576,3 +582,5 @@ nav li a:hover {
     justify-content: center;
   }
 }
+
+
